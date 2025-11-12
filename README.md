@@ -1,6 +1,6 @@
 [Frontend_Dolgozat_Gyakorló_Jegyzet_Github(1).md](https://github.com/user-attachments/files/23501167/Frontend_Dolgozat_Gyakorlo_Jegyzet_Github.1.md)
 # 🧩 Frontend Dolgozat Gyakorló Jegyzet
-
+## A repo-n megtalálható a feladatleírás és a forrás is, azokat használtam a megoldáshoz.
 ---
 
 ### 🌐 Címek
