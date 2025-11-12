@@ -197,7 +197,7 @@ app.use(router);
 ---
 
 ### 🧱 `App.vue`
-
+Ezentúl mindegyik .vue-ba írj valamit hogy működjön! Elég egy template.
 ```vue
 <script setup></script>
 
