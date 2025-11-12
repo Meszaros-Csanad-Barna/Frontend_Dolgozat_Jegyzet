@@ -385,6 +385,41 @@ import Header from './Header.vue'
 </template>
 ```
 
+---
+
+### `frontend/src/Header.vue`
+```vue
+<template>
+    <div class="flex bg-blue-200 py-2 px-4 gap-3">
+        <RouterLink to="/recipes" class="hover:underline" active-class="underline">Receptek</RouterLink>
+        <RouterLink to="/recipes/new" class="hover:underline" active-class="underline">Új recept</RouterLink>
+    </div>
+</template>
+```
+
+---
+
+### `frontend/src/views/recipes/NewRecipes.vue`
+```vue
+<template>
+    <div class="flex bg-blue-200 py-2 px-4 gap-3">
+        <RouterLink to="/recipes" class="hover:underline" active-class="underline">Receptek</RouterLink>
+        <RouterLink to="/recipes/new" class="hover:underline" active-class="underline">Új recept</RouterLink>
+    </div>
+</template>
+```
+
+---
+###`frontend/src/views/recipes/Recipe.vue`
+```vue
+<script setup>
+
+</script>
+
+<template>
+Recipes
+</template>
+```
 
 ---
 
