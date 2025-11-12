@@ -369,6 +369,25 @@ window.recipeStore = useRecipeStore();
 
 ---
 
+### `frontend/src/App.vue`
+```vue
+<script setup>
+import Header from './Header.vue'
+</script>
+
+<template>
+  <div class="flex flex-col h-screen">
+    <Header />
+    <div class="bg-green-100 flex-grow-1">
+      <RouterView />
+    </div>
+  </div>
+</template>
+```
+
+
+---
+
 ### 🧁 `jsonserver/data/db.json`
 
 ```json
