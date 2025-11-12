@@ -13,6 +13,14 @@
 ```bash
 docker compose restart jsonserver
 docker compose restart frontend
+
+```
+
+---
+
+### 🧱 Terminálon bash indítása
+
+```bash
 bash start.sh
 ```
 
