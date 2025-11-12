@@ -181,9 +181,9 @@ recipeStore.recipes;
 
 ---
 
-## 👀 Nézetek (`views/recipes/`)
+## 👀 Nézetek (`frontend/src/views/recipes/`)
 
-### `Recipes.vue` & `NewRecipe.vue`
+### `Recipes.vue` & `NewRecipe.vue` fájlok létrehozása
 
 ---
 
