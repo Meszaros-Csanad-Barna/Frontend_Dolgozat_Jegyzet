@@ -351,6 +351,55 @@ export const router = createRouter({
 
 ---
 
+### `frontend/src/store/RecipeStore.js`
+
+```js
+import { http } from "@utils/http";
+import { defineStore } from "pinia"
+import { ref } from "vue";
+
+export const useRecipeStore = defineStore('recipes', () => {
+    const recipes = ref([])
+    const isLoading = ref(true)
+    const error = ref(undefined)
+
+    async function load(){
+        const res = await http.get('recipes')
+        recipes.value = res.data.data
+        isLoading.value = false
+    }
+
+    load().catch((err) => {
+        error.value=err.value
+    })
+
+    async function createRecipe(data){
+        const res = await http.post('recipes', data)
+    	recipes.value.push(res.data.data)
+    }
+
+    async function deleteRecipe(id){
+        await http.delete(`recipes/${id}`)
+        //const index = recipes.value.findIndex(r => r.id === id)
+        //if (index > -1){
+        //    recipes.value.splice(index, 1)
+        //}
+        recipes.value  = recipes.value.filter(r => r.id != id)
+    }
+
+    return{
+        recipes,
+        isLoading,
+        error,
+        createRecipe,
+        deleteRecipe
+    }
+})
+
+```
+
+---
+
 ### `frontend/src/main.js`
 
 ```js
