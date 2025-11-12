@@ -19,7 +19,7 @@ docker compose restart frontend
 
 ---
 
-### 🧱 Terminálon bash indítása
+### 🧱 Terminálon bash indítása, főmappában
 
 ```bash
 bash start.sh
