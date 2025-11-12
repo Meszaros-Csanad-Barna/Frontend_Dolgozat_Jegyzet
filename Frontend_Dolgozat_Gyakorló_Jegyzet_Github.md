@@ -410,7 +410,7 @@ import Header from './Header.vue'
 ```
 
 ---
-###`frontend/src/views/recipes/Recipe.vue`
+### `frontend/src/views/recipes/Recipe.vue`
 ```vue
 <script setup>
 
